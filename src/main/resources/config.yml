@@ -1,0 +1,3 @@
+# config.yml
+messages:
+  twitchNotification: "&6A streamer is live on Twitch! Go live now --> twitch.tv/{twitchUsername}"
