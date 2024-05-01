@@ -1,6 +1,7 @@
 name: TwitchPlugin
 version: 1.0-SNAPSHOT
 main: queryys.twitchplugin.TwitchPlugin
+config: config.yml
 commands:
   twitch:
     description: Sends a notification when a Twitch streamer goes live

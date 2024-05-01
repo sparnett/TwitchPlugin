@@ -4,13 +4,19 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 import queryys.twitchplugin.commands.TwitchCommand;
 
+import java.io.File;
+
 public class TwitchPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
         getLogger().info("TwitchPlugin has been enabled!");
 
-        // Get the configuration from the plugin
+        // Create or load the configuration
+        File configFile = new File(getDataFolder(), "config.yml");
+        if (!configFile.exists()) {
+            saveDefaultConfig();
+        }
         FileConfiguration config = getConfig();
 
         // Register commands
