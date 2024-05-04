@@ -1,3 +1,8 @@
-# config.yml
+###########################################
+#             Configuration               #
+#           Plugin by SparnetXD           #
+###########################################
+
+# by SparnetXD [TwitchPlugin]
 messages:
   twitchNotification: "[Twitch] &6A streamer is live on Twitch! Go live now --> twitch.tv/{twitchUsername}"
